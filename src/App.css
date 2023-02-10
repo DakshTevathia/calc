@@ -1,38 +1,80 @@
 .App {
   text-align: center;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculatorContainer {
+  height: 30rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calculatorDisplay {
+  /* background-color: blue; */
+  /* height: 4rem; */
+  width: 16rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.calculatorOperationsContainer {
+  width: 16rem;
+  height: 4rem;
+  background-color: black;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.operation {
+  height: 4rem;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  border: solid 1px black;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.operation:hover {
+  background-color: white;
+  color: black;
+}
+
+.calculatorNumbers {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 18rem;
+  width: 16rem;
+
+}
+
+.individualNumbers {
+  border: solid 1px black;
+  background-color: black;
+  color: white;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.individualNumbers:hover {
+  color: black;
+  background-color: white;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
